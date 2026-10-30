@@ -1,0 +1,54 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^api/v1/ip/?$ index.php [L,QSA]
+RewriteRule ^api/v1/public/ index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^api/v1/ip/?$ index.php [L,QSA]
+RewriteRule ^api/v1/book/?$ index.php [L,QSA]
+RewriteRule ^api/v1/reviews/?$ index.php [L,QSA]
+RewriteRule ^api/v1/public/ index.php [L,QSA]
+RewriteRule ^review/(\d+)/?$ index.php [L,QSA]
+RewriteRule ^qr/review/(\d+)/?$ index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^api/v1/ip/?$ index.php [L,QSA]
+RewriteRule ^api/v1/book/?$ index.php [L,QSA]
+RewriteRule ^api/v1/reviews/?$ index.php [L,QSA]
+RewriteRule ^api/v1/public/ index.php [L,QSA]
+RewriteRule ^review/(\d+)/?$ index.php [L,QSA]
+RewriteRule ^qr/review/(\d+)/?$ index.php [L,QSA]
+RewriteRule ^admin/qr/?$ index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^api/v1/ip/?$ index.php [L,QSA]
+RewriteRule ^api/v1/books/?$ index.php [L,QSA]
+RewriteRule ^api/v1/book/?$ index.php [L,QSA]
+RewriteRule ^api/v1/reviews/?$ index.php [L,QSA]
+RewriteRule ^api/v1/public/ index.php [L,QSA]
+RewriteRule ^review/(\d+)/?$ index.php [L,QSA]
+RewriteRule ^qr/review/(\d+)/?$ index.php [L,QSA]
+RewriteRule ^admin/qr/?$ index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
